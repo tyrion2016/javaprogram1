@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Param_haromszogevnem.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST0 {color: #969696; font-family: Monospaced; font-weight: bold}
+.ST1 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST3 {color: #009900}
+.ST2 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST4 {color: #009900; font-family: Monospaced; font-style: italic}
+.ST5 {font-family: Monospaced; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">C:\Users\DOBAISZABOLCS\Documents\NetBeansProjects\param_haromszogevnem\src\param_haromszogevnem\Param_haromszogevnem.java</td></tr></table>
+<pre>
+ 1 <span class="comment">/*</span>
+ 2 <span class="comment"> * To change this license header, choose License Headers in Project Properties.</span>
+ 3 <span class="comment"> * To change this template file, choose Tools | Templates</span>
+ 4 <span class="comment"> * and open the template in the editor.</span>
+ 5 <span class="comment"> */</span>
+ 6 <span class="literal">package</span> param_haromszogevnem;
+ 7 
+ 8 <span class="comment">/**</span>
+ 9 <span class="comment"> *</span>
+10 <span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">DOBAISZABOLCS</span>
+11  <span class="comment">*/</span>
+12 <span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Param_haromszogevnem</span> {
+13 
+14     <span class="comment">/**</span>
+15 <span class="comment">     * </span><span class="ST0">@param</span> args <span class="comment">the</span> <span class="comment">command</span> <span class="comment">line</span> <span class="comment">arguments</span>
+16      <span class="comment">*/</span>
+17     <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+18         <span class="comment">// a megadott paraméterek alapján eldönti, szerkeszthető-e a háromszög</span>
+19         <span class="literal">if</span> (args.<span class="ST3">length</span>&lt;3 || args.<span class="ST3">length</span>&gt;3 )
+20         {
+21             System.<span class="ST4">out</span>.println(<span class="string">&quot;</span><span class="string">Túl sok vagy túl kevés számot adott meg egy háromszöghöz!</span><span class="string">&quot;</span>);
+22         }
+23        <span class="literal">int</span> a=Integer.<span class="ST5">parseInt</span>(args[0]);
+24        <span class="literal">int</span> b=Integer.<span class="ST5">parseInt</span>(args[1]);
+25        <span class="literal">int</span> c=Integer.<span class="ST5">parseInt</span>(args[2]);
+26       <span class="literal">if</span> (a&gt;b &amp;&amp; a&gt;c &amp;&amp; a&lt;(b+c))
+27       {
+28           System.<span class="ST4">out</span>.print(<span class="string">&quot;</span><span class="string">Remek! Szerkeszthető!</span><span class="string">&quot;</span>);
+29       }
+30       <span class="literal">else</span> <span class="literal">if</span> (b&gt;a &amp;&amp; b&gt;c &amp;&amp; b&lt;(a+c))
+31       {
+32           System.<span class="ST4">out</span>.print(<span class="string">&quot;</span><span class="string">Szuper! Szerkeszthető!</span><span class="string">&quot;</span>);
+33       }
+34       <span class="literal">else</span> <span class="literal">if</span> (c&gt;a &amp;&amp; c&gt;b &amp;&amp; c&lt;(a+b))
+35       {
+36           System.<span class="ST4">out</span>.print(<span class="string">&quot;</span><span class="string">Csúcs! Ez is jó!</span><span class="string">&quot;</span>);
+37       }
+38       <span class="literal">else</span>
+39       {
+40           System.<span class="ST4">out</span>.print(<span class="string">&quot;</span><span class="string">Sajnos ez nem lesz jó!</span><span class="string">&quot;</span>);
+41       }
+42     }
+43     
+44 }
+45 
+</pre></body>
+</html>
